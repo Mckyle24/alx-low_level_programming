@@ -1,18 +1,24 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
+
 /**
- * main - print if the number is postive, zero, or negative
+ * main - Prints base 10 numbers
+ * @void: Empty parameter list for main.
  *
- * Description: using the main function
- * this program prints "Programming is positive, zero, or negative
- * Return: 0
- */
+ * Description: Prints numbers 0-9
+ *
+ * Return: 0 for success
+*/
 int main(void)
 {
-char c;
-for (c = '0'; c <= '9'; c++)
-{
-	putchar(c);
-}
-putchar('\n');
-return (0);
+	int num = 48;
+
+	while (num <= 57)
+	{
+		putchar(num);
+		num++;
+	}
+	putchar('\n');
+	return (0);
 }
