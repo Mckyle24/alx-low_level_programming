@@ -1,28 +1,26 @@
 #include "main.h"
+
 /**
- * _strncpy - check the code for ALX School students.
- * @src: parameter to a src to copy
- * @dest: parameter for dest
- * @n: parameter for number of bytes
- * Return: Always 0.
- */
+ * *_strcpy - copies string src to buffer pointed to by dest
+ * @dest: string pointer
+ * @src: buffer pointer
+ * Description: cpies string src to buffer
+ * Return: dest pointer
+ **/
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strcpy(char *dest, char *src)
 {
-	int a = 0;
-	int b = 0;
+	int i;
 
-	while (a != n)
+	i = 0;
+
+	while (i >= 0)
 	{
-		dest[b] = src[a];
-		b++;
-		a++;
-		if (src[a] == '\0')
-		{
-			break;
-		}
+		dest[i] = src[i];
+
+		if (src[i] == '\0')
+			return (dest);
+		i++;
 	}
-	while (b != n)
-		dest[b++] = '\0';
 	return (dest);
 }
